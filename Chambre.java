@@ -1,5 +1,9 @@
 public class Chambre {
-   public static int idChambre = 0 ; // numero de la chambre 
+	
+	
+	
+	
+   private static int idChambre = 0 ; // numero de la chambre 
    public String type ;// suite , simple  / on peut la faire comme une hashmap
    public String capasity ;// sinon on fait une hashmap et pur chaque valeur c'est un code wella bles collection 
    public double prix ; 
@@ -18,6 +22,12 @@ public class Chambre {
    public void setIsEmpthy(boolean isEmpthy){
     this.isEmpthy= isEmpthy;
    }
+public static int getIdChambre() {
+	return idChambre;
+}
+public static void setIdChambre(int idChambre) {
+	Chambre.idChambre = idChambre;
+}
 
 
 
