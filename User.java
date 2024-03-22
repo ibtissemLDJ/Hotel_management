@@ -1,7 +1,7 @@
 public class User {
    public String name; 
    public String lastName;
-   public static int idUser = 0;
+   private static int idUser = 0;
    private String phoneNumber; 
    private String email;
    
@@ -27,5 +27,12 @@ public class User {
    public  void subsecribe(){
 
    }
+public static int getIdUser() {
+	return idUser;
+}
+public static void setIdUser(int idUser) {
+	User.idUser = idUser;
+}
+   
 
 }
